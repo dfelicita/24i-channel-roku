@@ -1,0 +1,19 @@
+title=24i-channel
+major_version=1
+minor_version=0
+build_version=0
+rsg_version=1.0
+
+mm_icon_focus_sd=pkg:/static/images/icon_sd.jpg
+mm_icon_focus_hd=pkg:/static/images/icon_hd.jpg
+mm_icon_focus_fhd=pkg:/static/images/icon_fhd.jpg
+
+#splash images
+splash_screen_sd=pkg:/static/images/splash_sd.jpg
+splash_screen_hd=pkg:/static/images/splash_hd.jpg
+splash_screen_fhd=pkg:/static/images/splash_fhd.jpg
+splash_color=#081a2b
+
+splash_min_time=2500
+
+ui_resolutions=fhd
