@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<component name="AppScene" extends="Scene" >
-    <script type="text/brightscript" uri="./AppScene.brs" />
-    <interface>
-        <Label
-        id="myLabel"
-        text="Hello World" /> 
-    </interface>
-</component>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component name="MainScene" extends="Scene">
+	<script type="text/brightscript" uri="pkg:/components/MainScene.brs" />
+    <script type="text/brightscript" uri="pkg:/source/HTTPApiClient.brs" />
+    <interface>
+        <field id="apiKey" type="string" />
+    </interface>
+	<children>
+        <AssetsGrid 
+        id="assetsGrid"
+        visible="false"
+        translation="[0,0]" />
+
+        <SearchPage 
+        id="search"
+        visible="false"
+        translation="[0,0]" />
+
+        <BusySpinner
+        id="spinner"
+        translation="[896, 476]"
+        clockwise="false"
+        spinInterval="1"
+        visible="true" />
+
+	</children>
+</component>

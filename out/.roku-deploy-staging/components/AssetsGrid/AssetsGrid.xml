@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="AssetsGrid" extends="Group" initialFocus="assetsPosterGrid">
+    <script type="text/brightscript" uri="pkg:/components/AssetsGrid/AssetsGrid.brs" />
+    <script type="text/brightscript" uri="pkg:/source/HTTPApiClient.brs" />
+    <interface>
+        <field id="apiKey" type="string" onChange="loadMovies" />
+        <field id="getFocus" type="boolean" onChange="putFocus" />
+    </interface>
+    <children>
+        <Label id="header" text="Media List" translation="[50,50]" />
+        <PosterGrid
+        id="assetsPosterGrid"
+        basePosterSize="[ 440, 440 ]"
+        caption1NumLines="1"
+        numColumns="4"
+        numRows="3"
+        itemSpacing="[ 20, 20 ]"
+        translation="[50,100]" />
+	</children>
+</component>

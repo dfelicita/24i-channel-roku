@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="SearchPage" extends="Group" initialFocus="search">
+    <script type="text/brightscript" uri="pkg:/components/SearchPage/SearchPage.brs" />
+    <script type="text/brightscript" uri="pkg:/source/HTTPApiClient.brs" />
+    <interface>
+        <field id="apiKey" type="string" />
+        <field id="getFocus" type="boolean" onChange="putFocus" />
+    </interface>
+    <children>
+        <Label id="header" text="Search for Media" translation="[0,50]" width="1920" horizAlign="center" />
+        <Keyboard id="search" translation="[50,100]" />
+        <RadioButtonList id = "selectRadio" vertFocusAnimationStyle="floatingFocus" translation="[250,550]">
+            <ContentNode role="content">
+                <ContentNode title="Movies" />
+                <ContentNode title="Series" />
+            </ContentNode>
+        </RadioButtonList>
+        <Button id="okButton" text="Search" showFocusFootprint="true" iconUri="" focusedIconUri="" minWidth="500" translation="[1155,540]" />
+	</children>
+</component>

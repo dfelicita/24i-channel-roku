@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="HTTPTask" extends="Task">
+
+  <interface>
+    <field id="jsonResult" type="assocarray" alwaysNotify="true"/>
+    <field id="URL" type="string" />
+    <field id="apiKey" type="string" />
+  </interface>
+
+  <script type="text/brightscript" uri="pkg:/components/APITask/HTTPTask.brs" />
+</component>
