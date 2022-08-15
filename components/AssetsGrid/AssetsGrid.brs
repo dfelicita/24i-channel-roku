@@ -1,11 +1,14 @@
 sub init()
     m.assetsPosterGrid = m.top.findNode("assetsPosterGrid")
+    m.labelkey = m.top.findNode("labelkey")
+    m.labelkey.text = m.top.apiKey
+    ' loadMovies()
 end sub
 
 sub loadMovies()
     m.request = HTTPApiClient()
     m.request.componentPointer = m
-	m.request.URL = "http://192.168.1.103:8080/vod"
+	m.request.URL = "http://192.168.50.100:8080/vod"
     m.request.apiKey = m.top.apiKey
 	m.request.callback = listMovies
 	m.request.executeTask()

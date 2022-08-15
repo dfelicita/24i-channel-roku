@@ -8,6 +8,7 @@
     </interface>
     <children>
         <Label id="header" text="Media List" translation="[50,50]" />
+        <Label id="labelkey" translation="[350,50]" />
         <PosterGrid
         id="assetsPosterGrid"
         basePosterSize="[ 440, 440 ]"

@@ -7,7 +7,7 @@ sub executeRequest()
 	urlTranfer.setUrl(m.top.URL)
 
 	if m.top.apiKey <> "" AND m.top.apiKey <> invalid
-		urlTranfer.AddHeader("x-api-token", m.top.apiKey)
+		urlTranfer.AddHeader("X-API-TOKEN", m.top.apiKey)
 	end if
 
 	' allow for https
